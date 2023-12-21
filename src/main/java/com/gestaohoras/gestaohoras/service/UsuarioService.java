@@ -20,4 +20,11 @@ public class UsuarioService {
 
     public void salvar(Usuario usuario) {repositoy.save(usuario);
     }
+
+    public Usuario listarPorId(Integer id) {
+        return repositoy.findById(id).get();
+    }
+
+    public void excluir(Integer id) {repositoy.deleteById(id);
+    }
 }

@@ -20,4 +20,22 @@ public class UsuarioController {
 
     @PostMapping
     public void salvar(@RequestBody Usuario usuario){service.salvar(usuario);}
+
+    @PutMapping("{id}")
+    public void editar(@PathVariable Integer id, @RequestBody Usuario usuarioEditado){
+        Usuario usuario = service.listarPorId(id);
+        usuario.setMatricula(usuarioEditado.getMatricula());
+        usuario.setNome(usuarioEditado.getNome());
+        usuario.setFone(usuarioEditado.getFone());
+        usuario.setEmail(usuarioEditado.getEmail());
+        usuario.setNivel(usuarioEditado.getNivel());
+        usuario.setSenha(usuarioEditado.getSenha());
+        service.salvar(usuario);
+    }
+
+    @DeleteMapping("{id}")
+    public void excluir(@PathVariable Integer id){
+        service.excluir(id);
+    }
+
 }
