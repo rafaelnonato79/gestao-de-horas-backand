@@ -1,0 +1,24 @@
+2023-12-20 20:05:15.045 -03 [8712] LOG:  starting PostgreSQL 16.1, compiled by Visual C++ build 1937, 64-bit
+2023-12-20 20:05:15.097 -03 [8712] LOG:  listening on IPv6 address "::1", port 5432
+2023-12-20 20:05:15.097 -03 [8712] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2023-12-20 20:05:15.319 -03 [9872] LOG:  sistema de banco de dados foi interrompido; última execução em 2023-12-20 18:51:48 -03
+2023-12-20 20:05:18.507 -03 [9872] LOG:  sistema de banco de dados não foi desligado corretamente; recuperação automática está em andamento
+2023-12-20 20:05:18.522 -03 [9872] LOG:  redo inicia em 0/1E99DD8
+2023-12-20 20:05:18.814 -03 [9872] LOG:  invalid record length at 0/2312F48: expected at least 24, got 0
+2023-12-20 20:05:18.814 -03 [9872] LOG:  redo done at 0/2312F00 system usage: CPU: user: 0.03 s, system: 0.06 s, elapsed: 0.29 s
+2023-12-20 20:05:18.825 -03 [11784] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-12-20 20:05:24.258 -03 [11784] LOG:  checkpoint complete: wrote 972 buffers (5.9%); 0 WAL file(s) added, 0 removed, 1 recycled; write=0.157 s, sync=5.247 s, total=5.437 s; sync files=301, longest=0.607 s, average=0.018 s; distance=4580 kB, estimate=4580 kB; lsn=0/2312F48, redo lsn=0/2312F48
+2023-12-20 20:05:24.366 -03 [8712] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2023-12-20 20:10:18.366 -03 [11784] LOG:  checkpoint starting: time
+2023-12-20 20:10:23.583 -03 [11784] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.100 s, sync=0.915 s, total=5.221 s; sync files=32, longest=0.064 s, average=0.029 s; distance=145 kB, estimate=4137 kB; lsn=0/23376C0, redo lsn=0/2337688
+2023-12-20 20:15:18.608 -03 [11784] LOG:  checkpoint starting: time
+2023-12-20 20:15:19.018 -03 [11784] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.342 s, sync=0.011 s, total=0.420 s; sync files=3, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=3723 kB; lsn=0/2337920, redo lsn=0/23378E8
+2023-12-20 20:17:47.946 -03 [8712] LOG:  processo servidor (PID 5172) foi terminado pela exceção 0xC000013A
+2023-12-20 20:17:47.946 -03 [8712] DETALHE:  Processo que falhou estava executando: SET search_path = public,public,"$user"
+2023-12-20 20:17:47.946 -03 [8712] DICA:  Veja o arquivo de cabeçalho C "ntstatus.h" para obter uma descrição do valor hexadecimal.
+2023-12-20 20:17:47.955 -03 [8712] LOG:  terminando quaisquer outros processos servidor ativos
+2023-12-20 20:17:48.169 -03 [8712] LOG:  todos os processos servidor foram terminados; reinicializando
+2023-12-20 20:17:48.327 -03 [8712] LOG:  processo de inicialização (PID 10788) foi terminado pela exceção 0xC0000142
+2023-12-20 20:17:48.327 -03 [8712] DICA:  Veja o arquivo de cabeçalho C "ntstatus.h" para obter uma descrição do valor hexadecimal.
+2023-12-20 20:17:48.327 -03 [8712] LOG:  interrompendo inicialização porque o processo de inicialização falhou
+2023-12-20 20:17:48.340 -03 [8712] LOG:  sistema de banco de dados está desligado
