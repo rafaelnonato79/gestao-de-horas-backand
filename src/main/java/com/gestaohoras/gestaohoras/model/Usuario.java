@@ -19,8 +19,9 @@ public class Usuario {
     @Column(name = "USU_NOME")
     private String nome;
 
-    @Column(name = "USU_FONE",length = 12)
-    private String fone;
+    @JoinColumn(name = "USU_FON_ID")
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Fone fone;
 
     @Column(name = "USU_EMAIL")
     private String email;
@@ -30,6 +31,5 @@ public class Usuario {
 
     @Column(name = "USU_SENHA")
     private String senha;
-
 
 }
