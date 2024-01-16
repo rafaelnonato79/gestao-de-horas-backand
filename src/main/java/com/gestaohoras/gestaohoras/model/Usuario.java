@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table
+@Table(name = "TB_USUARIOS")
 public class Usuario {
 
     @Id
@@ -27,7 +27,7 @@ public class Usuario {
     private String email;
 
     @Column(name = "USU_NIVEL")
-    private String nivel;
+    private Nivel nivel;
 
     @Column(name = "USU_SENHA")
     private String senha;

@@ -22,3 +22,34 @@
 2023-12-20 20:17:48.327 -03 [8712] DICA:  Veja o arquivo de cabeçalho C "ntstatus.h" para obter uma descrição do valor hexadecimal.
 2023-12-20 20:17:48.327 -03 [8712] LOG:  interrompendo inicialização porque o processo de inicialização falhou
 2023-12-20 20:17:48.340 -03 [8712] LOG:  sistema de banco de dados está desligado
+2024-01-15 00:09:49.312 -03 [10596] LOG:  starting PostgreSQL 16.1, compiled by Visual C++ build 1937, 64-bit
+2024-01-15 00:09:49.327 -03 [10596] LOG:  listening on IPv6 address "::1", port 5432
+2024-01-15 00:09:49.327 -03 [10596] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-15 00:09:49.564 -03 [9984] LOG:  sistema de banco de dados foi interrompido; última execução em 2024-01-14 23:43:44 -03
+2024-01-15 00:09:51.751 -03 [9984] LOG:  sistema de banco de dados não foi desligado corretamente; recuperação automática está em andamento
+2024-01-15 00:09:51.786 -03 [9984] LOG:  redo inicia em 0/3614608
+2024-01-15 00:09:51.794 -03 [9984] LOG:  invalid record length at 0/3614918: expected at least 24, got 0
+2024-01-15 00:09:51.794 -03 [9984] LOG:  redo done at 0/36148E0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.01 s
+2024-01-15 00:09:51.808 -03 [15704] LOG:  checkpoint starting: end-of-recovery immediate wait
+2024-01-15 00:09:51.858 -03 [15704] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.013 s, total=0.057 s; sync files=5, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/3614918, redo lsn=0/3614918
+2024-01-15 00:09:51.904 -03 [10596] LOG:  sistema de banco de dados está pronto para aceitar conexões
+2024-01-15 00:10:40.950 -03 [15704] LOG:  checkpoint starting: immediate force wait
+2024-01-15 00:10:40.973 -03 [15704] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.003 s, total=0.023 s; sync files=1, longest=0.003 s, average=0.003 s; distance=2 kB, estimate=2 kB; lsn=0/3615208, redo lsn=0/36151D0
+2024-01-15 00:15:40.988 -03 [15704] LOG:  checkpoint starting: time
+2024-01-15 00:17:37.567 -03 [15704] LOG:  checkpoint complete: wrote 970 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=116.023 s, sync=0.446 s, total=116.578 s; sync files=300, longest=0.011 s, average=0.002 s; distance=4581 kB, estimate=4581 kB; lsn=0/3A8E960, redo lsn=0/3A8E928
+2024-01-15 00:20:40.717 -03 [15704] LOG:  checkpoint starting: time
+2024-01-15 00:20:41.748 -03 [15704] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.986 s, sync=0.004 s, total=1.041 s; sync files=1, longest=0.004 s, average=0.004 s; distance=35 kB, estimate=4127 kB; lsn=0/3A975C8, redo lsn=0/3A97590
+2024-01-15 00:30:40.788 -03 [15704] LOG:  checkpoint starting: time
+2024-01-15 00:30:41.164 -03 [15704] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.142 s, sync=0.028 s, total=0.386 s; sync files=1, longest=0.010 s, average=0.010 s; distance=4 kB, estimate=3714 kB; lsn=0/3A985E8, redo lsn=0/3A985B0
+2024-01-15 00:49:01.718 -03 [10596] LOG:  processo servidor (PID 4696) foi terminado pela exceção 0xC000013A
+2024-01-15 00:49:01.718 -03 [10596] DETALHE:  Processo que falhou estava executando: SELECT c.oid,c.*,d.description,pg_catalog.pg_get_expr(c.relpartbound, c.oid) as partition_expr,  pg_catalog.pg_get_partkeydef(c.oid) as partition_key 
+	FROM pg_catalog.pg_class c
+	LEFT OUTER JOIN pg_catalog.pg_description d ON d.objoid=c.oid AND d.objsubid=0 AND d.classoid='pg_class'::regclass
+	WHERE c.relnamespace=$1 AND c.relkind not in ('i','I','c')
+2024-01-15 00:49:01.718 -03 [10596] DICA:  Veja o arquivo de cabeçalho C "ntstatus.h" para obter uma descrição do valor hexadecimal.
+2024-01-15 00:49:01.767 -03 [10596] LOG:  terminando quaisquer outros processos servidor ativos
+2024-01-15 00:49:03.360 -03 [10596] LOG:  todos os processos servidor foram terminados; reinicializando
+2024-01-15 00:49:04.166 -03 [10596] LOG:  processo de inicialização (PID 6820) foi terminado pela exceção 0xC0000142
+2024-01-15 00:49:04.166 -03 [10596] DICA:  Veja o arquivo de cabeçalho C "ntstatus.h" para obter uma descrição do valor hexadecimal.
+2024-01-15 00:49:04.166 -03 [10596] LOG:  interrompendo inicialização porque o processo de inicialização falhou
+2024-01-15 00:49:04.196 -03 [10596] LOG:  sistema de banco de dados está desligado

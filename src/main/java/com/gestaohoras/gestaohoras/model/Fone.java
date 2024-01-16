@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table
+@Table(name = "TB_FONES")
 @Data
 public class Fone {
 
@@ -16,6 +16,5 @@ public class Fone {
 
     @Column(name = "FON_NUMERO", length = 15)
     private String numero;
-
 
 }
